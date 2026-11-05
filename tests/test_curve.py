@@ -6,8 +6,8 @@ from datetime import date
 import numpy as np
 import pytest
 
-from kairos_rates.curve import CurveQuote, DiscountCurve, bootstrap
-from kairos_rates.data import synthetic_curve, synthetic_quotes
+from kairos_rates.curve import DiscountCurve
+from kairos_rates.data import synthetic_curve
 from kairos_rates.daycount import add_months, schedule, year_fraction
 
 

@@ -6,7 +6,6 @@ import math
 import numpy as np
 import pytest
 
-from kairos_rates.curve import DiscountCurve
 from kairos_rates.data import synthetic_curve
 from kairos_rates.models import (
     CIR,

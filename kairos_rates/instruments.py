@@ -5,7 +5,6 @@ import math
 from dataclasses import dataclass
 from typing import Any, Callable, Dict, List, Optional, Sequence
 
-import numpy as np
 
 from .curve import DiscountCurve
 

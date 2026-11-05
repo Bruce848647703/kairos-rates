@@ -5,7 +5,7 @@
 > **从报价到风险**：存款/互换 bootstrap → Nelson-Siegel / Svensson → Vasicek / CIR / Hull-White →
 > 债券与利率互换定价 → 平行 DV01 与关键利率久期。
 
-零第三方依赖（`numpy` + 标准库），41 个测试 + GitHub Actions CI，全程确定性可复现。
+零第三方依赖（`numpy` + 标准库），42 个测试 + GitHub Actions CI，全程确定性可复现。
 
 ---
 
@@ -180,7 +180,7 @@ kairos_rates/
 ├── data.py         合成曲线与 CSV
 ├── numerics.py     Nelder-Mead
 └── cli.py          命令行
-tests/              41 个测试
+tests/              42 个测试
 examples/           4 个示例（含绘图）
 ```
 

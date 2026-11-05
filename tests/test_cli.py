@@ -67,3 +67,16 @@ def test_cli_curve(tmp_path, capsys):
     save_quotes_csv(synthetic_quotes(synthetic_curve()), str(path))
     assert main(["curve", "--csv", str(path)]) == 0
     assert "零息利率" in capsys.readouterr().out
+
+
+def test_cli_version_and_top_level_help(capsys):
+    with pytest.raises(SystemExit) as exc:
+        main(["--version"])
+    assert exc.value.code == 0
+    assert capsys.readouterr().out.startswith("kairos-rates ")
+
+    with pytest.raises(SystemExit) as exc:
+        main(["--help"])
+    assert exc.value.code == 0
+    out = capsys.readouterr().out
+    assert "{demo,curve,bond,swap}" in out
